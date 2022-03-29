@@ -1,0 +1,28 @@
+<h1>Orders</h1>
+
+<p>
+  <a href="/orders">all</a><br />
+  <a href="/orders?status=open">open</a><br />
+  <a href="/orders?status=delivered">delivered</a>
+</p>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Product</th>
+    <th>Price</th>
+    <th>Status</th>
+  </tr>
+
+  {% for o in orders %}
+
+    <tr>
+      <td>{{o.user}}</td>
+      <td>{{o.product}}</td>
+      <td>{{o.price}}</td>
+      <td>{{o.status}}</td>
+    </tr>
+
+  {% endfor %}
+
+</table>
