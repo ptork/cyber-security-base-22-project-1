@@ -1,6 +1,6 @@
 # cyber-security-base-22 project-1
 
-Source: <>
+Source: <https://github.com/ptork/cyber-security-base-22-project-1>
 
 ## Installation
 
@@ -19,7 +19,7 @@ python manage.py runserver
 
 ## FLAW 1: OWASP vulnerability: A01:2021 – Broken Access Control
 
-Source: <>
+Source: <https://github.com/ptork/cyber-security-base-22-project-1/blob/master/profiles/views.py#L6>
 
 ### Before running
 
@@ -60,7 +60,7 @@ return render(request, 'index.html', {'profile': profile })
 
 ### Description
 
-Source: <>
+Source: <https://github.com/ptork/cyber-security-base-22-project-1/blob/master/project1/settings.py#L46>
 
 In Django you can set the password hashing algorithm to be used when storing passwords in the database.
 
@@ -106,7 +106,7 @@ Use the admin view to create a new user and add an order belonging to that user.
 
 ## Flaw 3: A03:2021 – Injection
 
-Source: <>
+Source: <https://github.com/ptork/cyber-security-base-22-project-1/blob/master/orders/views.py#L6>
 
 ### Description
 
@@ -151,11 +151,9 @@ if request.GET.get('status')
 
 ## Flaw 4: A05:2021 – Security Misconfiguration
 
-Source: <>
+Source: <https://github.com/ptork/cyber-security-base-22-project-1/blob/master/project1/settings.py#L19>
 
 ### Description
-
-Source: <>
 
 Django uses a secret key to when performing cryptographic functions. For instance when signing a cookie.
 
@@ -178,7 +176,7 @@ DEBUG = os.environ['DEBUG']
 
 ## Flaw 5: A09:2021 – Security Logging and Monitoring Failures
 
-Source: <>
+Source: <https://github.com/ptork/cyber-security-base-22-project-1/blob/master/project1/logger.py#L7>
 
 ### Description
 
